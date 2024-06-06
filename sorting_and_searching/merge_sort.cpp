@@ -1,10 +1,11 @@
 //
 // Created by Anthoni on 06/06/24.
 //
-#include <iostream>
 #include <vector>
 
-void merge(std::vector<int>& array, std::vector<int>& helper, int low, int middle, int high) {
+#include <iostream>
+
+void merge(int array[], int helper[], int low, int middle, int high) {
     // Copia ambas metades para um vetor auxiliar
     for (int i = low; i <= high; ++i) {
         helper[i] = array[i];
@@ -33,7 +34,7 @@ void merge(std::vector<int>& array, std::vector<int>& helper, int low, int middl
     }
 }
 
-void mergeSort(std::vector<int>& array, std::vector<int>& helper, int low, int high) {
+void mergeSort(int array[], int helper[], int low, int high) {
     if (low < high) {
         int middle = (low + high) / 2;
         mergeSort(array, helper, low, middle); // Ordena a metade esquerda
@@ -42,20 +43,7 @@ void mergeSort(std::vector<int>& array, std::vector<int>& helper, int low, int h
     }
 }
 
-void mergeSort(std::vector<int>& array) {
-    std::vector<int> helper(array.size());
-    mergeSort(array, helper, 0, array.size() - 1);
-}
-
-int main() {
-    std::vector<int> array = {38, 27, 43, 3, 9, 82, 10};
-    mergeSort(array);
-
-    std::cout << "Vetor ordenado:" << std::endl;
-    for (int value : array) {
-        std::cout << value << " ";
-    }
-    std::cout << std::endl;
-
-    return 0;
+void mergeSort(int array[], int size) {
+    int helper[size]; // Cria um vetor auxiliar com o mesmo tamanho do vetor original
+    mergeSort(array, helper, 0, size - 1);
 }

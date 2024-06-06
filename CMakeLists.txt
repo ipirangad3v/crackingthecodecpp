@@ -4,4 +4,5 @@ project(crackingthecode)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(crackingthecode main.cpp
-        sorting_and_searching/mergesort.cpp)
+        sorting_and_searching/merge_sort.cpp
+        sorting_and_searching/merge_sort.h)
