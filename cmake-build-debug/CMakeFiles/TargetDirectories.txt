@@ -1,0 +1,3 @@
+/Users/anthoni/CLionProjects/crackingthecode/cmake-build-debug/CMakeFiles/crackingthecode.dir
+/Users/anthoni/CLionProjects/crackingthecode/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/anthoni/CLionProjects/crackingthecode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
