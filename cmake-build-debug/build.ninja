@@ -55,11 +55,17 @@ build CMakeFiles/crackingthecode.dir/main.cpp.o: CXX_COMPILER__crackingthecode_u
   OBJECT_DIR = CMakeFiles/crackingthecode.dir
   OBJECT_FILE_DIR = CMakeFiles/crackingthecode.dir
 
-build CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort.cpp.o: CXX_COMPILER__crackingthecode_unscanned_Debug /Users/anthoni/CLionProjects/crackingthecode/sorting_and_searching/merge_sort.cpp || cmake_object_order_depends_target_crackingthecode
-  DEP_FILE = CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort.cpp.o.d
+build CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort/merge_sort.cpp.o: CXX_COMPILER__crackingthecode_unscanned_Debug /Users/anthoni/CLionProjects/crackingthecode/sorting_and_searching/merge_sort/merge_sort.cpp || cmake_object_order_depends_target_crackingthecode
+  DEP_FILE = CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort/merge_sort.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/crackingthecode.dir
-  OBJECT_FILE_DIR = CMakeFiles/crackingthecode.dir/sorting_and_searching
+  OBJECT_FILE_DIR = CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort
+
+build CMakeFiles/crackingthecode.dir/sorting_and_searching/quick_sort/quick_sort.cpp.o: CXX_COMPILER__crackingthecode_unscanned_Debug /Users/anthoni/CLionProjects/crackingthecode/sorting_and_searching/quick_sort/quick_sort.cpp || cmake_object_order_depends_target_crackingthecode
+  DEP_FILE = CMakeFiles/crackingthecode.dir/sorting_and_searching/quick_sort/quick_sort.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/crackingthecode.dir
+  OBJECT_FILE_DIR = CMakeFiles/crackingthecode.dir/sorting_and_searching/quick_sort
 
 
 # =============================================================================
@@ -69,7 +75,7 @@ build CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort.cpp.o: CXX
 #############################################
 # Link the executable crackingthecode
 
-build crackingthecode: CXX_EXECUTABLE_LINKER__crackingthecode_Debug CMakeFiles/crackingthecode.dir/main.cpp.o CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort.cpp.o
+build crackingthecode: CXX_EXECUTABLE_LINKER__crackingthecode_Debug CMakeFiles/crackingthecode.dir/main.cpp.o CMakeFiles/crackingthecode.dir/sorting_and_searching/merge_sort/merge_sort.cpp.o CMakeFiles/crackingthecode.dir/sorting_and_searching/quick_sort/quick_sort.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
   OBJECT_DIR = CMakeFiles/crackingthecode.dir
   POST_BUILD = :

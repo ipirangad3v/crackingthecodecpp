@@ -4,6 +4,4 @@
 
 #pragma once
 
-#include <vector>
-
 void mergeSort(int array[], int size);
